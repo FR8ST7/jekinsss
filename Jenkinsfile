@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    IMAGE = "fr8st7/app:latest"
+    IMAGE = "fr8st7/flask-app:latest"
   }
   stages {
     stage('Clone') {
