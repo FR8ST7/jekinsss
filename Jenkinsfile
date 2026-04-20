@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    IMAGE = "fr8st7/myapp:latest"
+    IMAGE = "fr8st7/app:latest"
   }
   stages {
     stage('Clone') {
