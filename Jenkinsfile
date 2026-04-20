@@ -1,11 +1,11 @@
 pipeline {
   agent any
   environment {
-    IMAGE = "<dockerhub-username>/myapp:latest"
+    IMAGE = "fr8st7/myapp:latest"
   }
   stages {
     stage('Clone') {
-      steps { git 'https://github.com/<username>/<repo>.git' }
+      steps { git 'https://github.com/FR8ST7/jekinsss.git' }
     }
     stage('Build') {
       steps { sh 'docker build -t $IMAGE .' }
